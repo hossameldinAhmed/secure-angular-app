@@ -29,7 +29,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/js-shared-method.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -72,6 +74,11 @@
             },
             "development": {
               "browserTarget": "secure-angular-app:build:development"
+            },
+            "options": {
+              "ssl": true,
+              "sslKey": "C:/cert/server.key",
+              "sslCert": "C:/cert/certificate.pfx"
             }
           },
           "defaultConfiguration": "development"
